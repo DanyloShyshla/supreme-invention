@@ -1,5 +1,8 @@
 package ua.lviv.iot.models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Diapers extends BabyShop {
     private int amountInPack;
     private DiapersSize diapersModelSize;

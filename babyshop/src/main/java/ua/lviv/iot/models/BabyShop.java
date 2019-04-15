@@ -45,7 +45,24 @@ public class BabyShop {
         BabyShop withBrand = new BabyShop("customBrand");
     }
 
-    public BabyShop() { }
+    public BabyShop() {
+    }
+
+    @Override
+    public String toString() {
+        return "BabyShop{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", wareSafetyStandard=" + wareSafetyStandard +
+                ", goodAvailability=" + goodAvailability +
+                ", warranty=" + warranty +
+                ", ageSuitability=" + ageSuitability +
+                ", supplier='" + supplier + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
 
     public String getHeaders() {
         return "name" + ", " + "brand" + ", " + "price" + ", " + "wareSafetyStandard" + ", " + "goodAvailability" + ", " + "warranty"
@@ -55,6 +72,14 @@ public class BabyShop {
     public String toCSV() {
         return getName() + ", " + getBrand() + "," + getPrice() + ", " + getWareSafetyStandard() + ", " + getGoodAvailability() + ", "
                 + getWarranty() + ", " + getAgeSuitability() + "," + getSupplier() + ", " + getCountry();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

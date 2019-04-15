@@ -45,6 +45,17 @@ public class Chair extends BabyShop {
 
     }
 
+    @Override
+    public String toString() {
+        return "Chair{" +
+                "height=" + height +
+                ", width=" + width +
+                ", depth=" + depth +
+                ", weightLimit=" + weightLimit +
+                ", material='" + material + '\'' +
+                '}';
+    }
+
     public String getHeaders() {
         return super.getHeaders() + ", " + "height" + ", " + "width" + ", " + "depth" + ", " + "weightLimit" + ", " + "material";
     }
